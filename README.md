@@ -17,3 +17,12 @@ git clone https://github.com/HelixHEX/makeutility.git
 ```bash
 go run main.go
 ```
+
+### Example
+
+```bash
+$ go run main.go 
+Enter directory path: /Users/username/Desktop
+Enter output file name: output
+Total size of '/Users/username/Desktop' is 1.2 MB
+```

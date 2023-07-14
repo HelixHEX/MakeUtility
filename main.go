@@ -50,7 +50,7 @@ func calcDirSize(dirPath string, outputName string) (int64, error) {
 	}
 
 	if outputName == "" {
-		fmt.Print("\nEnter output filename: ")
+		fmt.Print("\nEnter the output file name: ")
 		fmt.Scanln(&outputName)
 	}
 
