@@ -38,7 +38,7 @@ func calcDirSize(dirPath string, outputName string) (int64, error) {
 
 		if !info.IsDir() && (lastPath != path && !strings.Contains(path, ".git") && !strings.Contains(path, "node_modules") && !strings.Contains(path, "env")) {
 			totalSize += info.Size()
-			stats += "Path:" + path + "\nSize: " + bytesize.New(float64(info.Size())).String()
+			stats += "Path:" + path + "\nSize: " + bytesize.New(float64(info.Size())).String() + "\n"
 			bar.Add(1)
 		}
 
